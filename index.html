@@ -12,15 +12,15 @@
       <a-entity camera></a-entity>
 
       <!-- Маркер Hiro -->
-      <a-marker preset="hiro">
-        <!-- 3D модель гітари -->
+      <a-marker type="pattern" url="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/three.js/data/data/patt.hiro">
         <a-entity 
-          gltf-model="url(guitar/scene.gltf)" 
+          gltf-model="guitar/scene.glb" 
           scale="0.5 0.5 0.5" 
-          position="0 0 0" 
+          position="0 0 0"
           rotation="0 180 0">
         </a-entity>
       </a-marker>
+      
 
       <!-- Плоский фон -->
       <a-entity light="type: ambient; color: #888"></a-entity>
